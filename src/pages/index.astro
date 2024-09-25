@@ -5,17 +5,23 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Forside">
-  <!-------------------- Hero-------------------->
+  <!-------------------- Hero -------------------->
   <div class="pt-5 pb-5">
-    <div class="md:grid gap-5 grid-cols-3 max-w-5xl mx-auto p-6">
+    <div class="grid gap-10 md:grid-cols-5 max-w-5xl mx-auto p-6">
       <!--Venstre Col-->
-      <div class="flex flex-col items-center justify-center">
-        <h1 class="text-white pb-5">Main Hero Message to sell yourself!</h1>
-        <p class="text-white pb-5">Sub-hero message, not too long and not too short. Make it just right!</p>
-        <Button variant="primary" size="small">Køb billet</Button>
+      <div class="md:col-span-2">
+        <div class="md:flex flex-col items-center justify-center h-full">
+          <h1 class="text-white pb-5">Helena Louise Pfeffer</h1>
+          <h2 class="text-white pb-5">Kreativ UI/UX Designer og Webudvikler</h2>
+          <p class="text-white pb-5">Jeg har udviklet og designet over 10 hjemmesider ved hjælp af HTML, CSS, JavaScript, Astro og Tailwind.</p>
+          <div class="pb-5 flex justify-center gap-2">
+            <a href="#kontakt"><Button variant="primary" size="small">Kontakt</Button></a>
+            <a href="#projekter"><Button variant="secondary" size="small">Projekter</Button></a>
+          </div>
+        </div>
       </div>
       <!--Hjøre Col-->
-      <div class="w-full col-span-2 col-start-2 flex items-center justify-center">
+      <div class="w-full md:col-span-3 md:col-start-3 flex items-center justify-center">
         <img class="w-full md:w-4/5 z-50" src="/workspace.svg" />
       </div>
     </div>
@@ -41,12 +47,52 @@ import Link from "../components/Link.astro";
 
   <div class="bg-white">
     <div class="max-w-5xl mx-auto p-6">
-      <!-------------------- Hero-------------------->
+      <!-------------------- Om mig -------------------->
+      <section class="md:grid gap-10 grid-cols-2 pt-10 pb-20">
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="pb-5">Jeg hedder Helena og er passioneret omkring UI/UX design.</h1>
+          <p class="pb-5">Jeg studerer til multimediedesigner på KEA og er særligt interesseret i UI/UX design.</p>
+          <p class="pb-5">I min arbejdsprocess er jeg struktureret og detaljeorienteret. Jeg er passioneret om at skabe brugeroplevelser, der er både intuitive og æstetisk tiltalende.</p>
+          <p class="pb-10">Jeg er ivrig efter at udvikle mine færdigheder og tager gerne nye udfordringer op.</p>
+        </div>
+        <div class="col-span-2 col-start-2 flex items-center justify-center">
+          <img class="rounded-full" src="/profil.png" alt="Profilbillede af Helena Louise Pfeffer" />
+        </div>
+      </section>
+
+      <!-------------------- Skills -------------------->
       <section>
-        <div>
-          <h2>Jeg hedder Helena og er passioneret omkring UI/UX design.</h2>
-          <p>Jeg studerer til multimediedesigner og er særligt interesseret i UI/UX design.</p>
-          <p>I min arbejdsprocess er jeg struktureret og detaljeorienteret. Jeg er passioneret om at skabe brugeroplevelser, der er både intuitive og æstetisk tiltalende.</p>
+        <div class="pb-5 md:grid gap-10 grid-cols-2">
+          <div>
+            <h1 class="pb-4">Værktøjer og Kompetencer</h1>
+            <p class="pb-10">Jeg bruger Figma til at opsætte designsystemer, skabe komponenter, lave wireframes og udvikle prototyper. Jeg følger "mobile first"-tankegangen.</p>
+          </div>
+        </div>
+        <div class="grid gap-10 grid-cols-2 md:grid-cols-6">
+          <div>
+            <img class="pb-3" src="/git.webp" alt="Github logo" />
+            <p class="text-center">Git og GitHub</p>
+          </div>
+          <div>
+            <img class="pb-3" src="/vs_code.webp" alt="visual studio code logo" />
+            <p class="text-center">HTML, CSS, JS, Astro og Tailwind</p>
+          </div>
+          <div>
+            <img class="pb-3" src="/figma.webp" alt="Figma logo" />
+            <p class="text-center">Figma</p>
+          </div>
+          <div>
+            <img class="pb-3" src="/ps.webp" alt="Photoshop logo" />
+            <p class="text-center">photoshop</p>
+          </div>
+          <div>
+            <img class="pb-3" src="/pr.webp" alt="Premiere pro logo" />
+            <p class="text-center">Premiere pro</p>
+          </div>
+          <div>
+            <img class="pb-5" src="/ai.webp" alt="Illustrator logo" />
+            <p class="text-center">Illustrator</p>
+          </div>
         </div>
       </section>
     </div>
