@@ -1,10 +1,10 @@
 ---
 const { variant = "primary", size = "medium" } = Astro.props;
 
-const buttonStyling = "rounded-lg px-6 p-3 font-semibold shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out uppercase";
+const buttonStyling = "rounded-full px-6 p-3 font-semibold shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out uppercase";
 
 const variantClasses = {
-  primary: "bg-custom-blue hover-bg-custom-blue border-custom-blue hover-border-custom-blue text-white",
+  primary: "bg-white hover:bg-neutral-200 text-gray-800",
   secondary: "bg-custom-blue-2 hover-bg-custom-blue-2 text-white",
 };
 

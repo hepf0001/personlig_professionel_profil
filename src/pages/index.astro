@@ -6,7 +6,7 @@ import Link from "../components/Link.astro";
 
 <MainLayout title="Forside">
   <!-------------------- Hero -------------------->
-  <div class="pt-5 pb-5">
+  <div class="pt-24 pb-5">
     <div class="grid gap-10 md:grid-cols-5 max-w-5xl mx-auto p-6">
       <!--Venstre Col-->
       <div class="md:col-span-2">
@@ -16,13 +16,13 @@ import Link from "../components/Link.astro";
           <p class="text-white pb-5">Jeg har udviklet og designet over 10 hjemmesider ved hjælp af HTML, CSS, JavaScript, Astro og Tailwind.</p>
           <div class="pb-5 flex justify-center gap-2">
             <a href="#kontakt"><Button variant="primary" size="small">Kontakt</Button></a>
-            <a href="#projekter"><Button variant="secondary" size="small">Projekter</Button></a>
+            <a href="#projekter"><Button variant="primary" size="small">Projekter</Button></a>
           </div>
         </div>
       </div>
       <!--Hjøre Col-->
       <div class="w-full md:col-span-3 md:col-start-3 flex items-center justify-center">
-        <img class="w-full md:w-4/5 z-50" src="/workspace.svg" />
+        <img class="w-full md:w-4/5" src="/workspace.svg" />
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@ import Link from "../components/Link.astro";
   <div class="bg-white">
     <div class="max-w-5xl mx-auto p-6">
       <!-------------------- Om mig -------------------->
-      <section class="md:grid gap-10 grid-cols-2 pt-10 pb-20">
+      <section class="md:grid gap-10 grid-cols-2 pt-20 pb-20" id="om_helena">
         <div class="flex flex-col items-center justify-center">
           <h1 class="pb-5">Jeg hedder Helena og er passioneret omkring UI/UX design.</h1>
           <p class="pb-5">Jeg studerer til multimediedesigner på KEA og er særligt interesseret i UI/UX design.</p>
@@ -56,12 +56,12 @@ import Link from "../components/Link.astro";
           <p class="pb-10">Jeg er ivrig efter at udvikle mine færdigheder og tager gerne nye udfordringer op.</p>
         </div>
         <div class="col-span-2 col-start-2 flex items-center justify-center">
-          <img class="rounded-full" src="/profil.png" alt="Profilbillede af Helena Louise Pfeffer" />
+          <img class="rounded-full" src="/profil.webp" alt="Profilbillede af Helena Louise Pfeffer" />
         </div>
       </section>
 
       <!-------------------- Skills -------------------->
-      <section>
+      <section class="pt-20 pb-20" id="kompetencer">
         <div class="pb-5 md:grid gap-10 grid-cols-2">
           <div>
             <h1 class="pb-4">Værktøjer og Kompetencer</h1>
@@ -94,6 +94,82 @@ import Link from "../components/Link.astro";
             <p class="text-center">Illustrator</p>
           </div>
         </div>
+      </section>
+
+      <!-------------------- Projekter -------------------->
+      <section class="pt-20 pb-20" id="projekter">
+        <div class="pb-5 md:grid gap-10 grid-cols-2">
+          <h1 class="pb-4">Projekter</h1>
+        </div>
+        <div class="grid gap-10 md:grid-cols-2">
+          <div class="bg-neutral-100 rounded-lg">
+            <a href="https://julespil.netlify.app/" target="_blank">
+              <img class="rounded-lg w-full h-48 object-cover" src="/jul.svg" alt="billede fra juletræet spil" />
+              <div class="p-6">
+                <h2 class="pb-4">Juletræet</h2>
+                <p class="">Juletræet var et af mine første projekter, hvor jeg udviklede et spil. Jeg opfandt konceptet og tegnede alle illustrationerne.</p>
+              </div>
+            </a>
+          </div>
+          <div class="bg-neutral-100 rounded-lg">
+            <a href="https://itmv007.netlify.app/" target="_blank">
+              <img class="rounded-lg w-full h-48 object-cover" src="/verden.webp" alt="billede fra i tråd med verden webfeature" />
+              <div class="p-6">
+                <h2 class="pb-4">I tråd med verden</h2>
+                <p class="">Jeg har udviklet en webfeature for I Tråd Med Verden, en socialøkonomisk virksomhed. Jeg tegnede illustrationer for at understøtte budskabet og fortælle en historie.</p>
+              </div>
+            </a>
+          </div>
+          <div class="bg-neutral-100 rounded-lg">
+            <a href="https://k2gruppe12.netlify.app/" target="_blank">
+              <img class="rounded-lg w-full h-48 object-cover" src="/k2.webp" alt="billede fra forsiden for k2's redesignet hjemmeside" />
+              <div class="p-6">
+                <h2 class="pb-4">K2</h2>
+                <p class="">Et samarbejde med en sko- og tøjbutik, hvor vi redesignede deres hjemmeside. Vi tog nye billeder og satte dem op med en database, som vi brugte til listeview og singleview.</p>
+              </div>
+            </a>
+          </div>
+          <div class="bg-neutral-100 rounded-lg">
+            <a href="https://cph-billeder.netlify.app/" target="_blank">
+              <img class="rounded-lg w-full h-48 object-cover" src="/kbh.webp" alt="billede af københavnerbilleder hjemmeside" />
+              <div class="p-6">
+                <h2 class="pb-4">Københavnerbilleder</h2>
+                <p class="">Københavnerbilleder var et simpelt design med masser af små animationer, der gav spil mens man scrolled ned på siden.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------- Baggrund -------------------->
+      <section class="pt-20 pb-20" id="baggrund">
+        <h1 class="pb-5">Baggrund</h1>
+        <ol class="relative border-s border-gray-200 dark:border-gray-700">
+          <li class="mb-10 ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2018</time>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">People's (tiligere: People's Press) - Grafisk designer praktik</h3>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sit atque laborum, architecto quae nam.</p>
+          </li>
+          <li class="mb-10 ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2018-2021</time>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">HHX - Køge Handelskole</h3>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li class="mb-10 ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2018-2019</time>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Kvik - Køkkenkonsulent</h3>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ratione, vel esse expedita corrupti.</p>
+          </li>
+          <li class="ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021- og fortsat</time>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">IKEA - ansat i returafdeling som dagligansvarlig</h3>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor consectetur adipisicing elit.</p>
+          </li>
+        </ol>
       </section>
     </div>
   </div>
