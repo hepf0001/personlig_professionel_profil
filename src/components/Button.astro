@@ -5,7 +5,7 @@ const buttonStyling = "rounded-full px-6 p-3 font-semibold shadow-lg focus:outli
 
 const variantClasses = {
   primary: "bg-white hover:bg-neutral-200 text-gray-800",
-  secondary: "bg-custom-blue-2 hover-bg-custom-blue-2 text-white",
+  secondary: "bg-neutral-200 hover:bg-neutral-300 text-gray-800",
 };
 
 const sizeClasses = {
@@ -16,19 +16,3 @@ const sizeClasses = {
 ---
 
 <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
-
-<style>
-  .bg-custom-blue {
-    background-color: #0188c7;
-  }
-  .hover-bg-custom-blue:hover {
-    background-color: #065c86;
-  }
-
-  .bg-custom-blue-2 {
-    background-color: #026da2;
-  }
-  .hover-bg-custom-blue-2:hover {
-    background-color: #0c4c6e;
-  }
-</style>
