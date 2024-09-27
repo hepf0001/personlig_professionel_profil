@@ -6,7 +6,7 @@ import Link from "../components/Link.astro";
 
 <MainLayout title="Forside">
   <!-------------------- Hero -------------------->
-  <div class="pt-24 pb-5">
+  <div class="pt-24 pb-5" id="logo">
     <div class="grid gap-10 md:grid-cols-5 max-w-5xl mx-auto p-6">
       <!--Venstre Col-->
       <div class="md:col-span-2">
@@ -22,7 +22,7 @@ import Link from "../components/Link.astro";
       </div>
       <!--Hjøre Col-->
       <div class="w-full md:col-span-3 md:col-start-3 flex items-center justify-center">
-        <img class="w-full md:w-4/5" src="/workspace.svg" alt="Illustration af Helenas arbejdsplads" />
+        <img class="w-full md:w-4/5 hover:scale-105 duration-700" src="/workspace.svg" alt="Illustration af Helenas arbejdsplads" />
       </div>
     </div>
   </div>
@@ -48,61 +48,61 @@ import Link from "../components/Link.astro";
   <div class="bg-white">
     <div class="max-w-5xl mx-auto p-6">
       <!-------------------- Om mig -------------------->
-      <section class="md:grid gap-10 grid-cols-2 md:pt-16 md:pb-16 pt-10 pb-10" id="om_helena">
-        <div class="flex flex-col items-center justify-center">
+      <section class="md:grid gap-10 grid-cols-2 md:pb-20 md:pt-20 pt-10 pb-10" id="om_helena">
+        <div class="flex flex-col items-center justify-center elementmedanimation1">
           <h1 class="pb-5">Jeg hedder Helena og er passioneret omkring UI/UX design.</h1>
           <p class="pb-5">Jeg studerer til multimediedesigner på KEA og er særligt interesseret i UI/UX design.</p>
           <p class="pb-5">I min arbejdsprocess er jeg struktureret og detaljeorienteret. Jeg er passioneret om at skabe brugeroplevelser, der er både intuitive og æstetisk tiltalende.</p>
           <p class="pb-10">Jeg er ivrig efter at udvikle mine færdigheder og tager gerne nye udfordringer op.</p>
         </div>
         <div class="col-span-2 col-start-2 flex items-center justify-center">
-          <img class="rounded-full" src="/profil.webp" alt="Profilbillede af Helena Louise Pfeffer" />
+          <img class="rounded-full hover:scale-105 duration-700" src="/profil.webp" alt="Profilbillede af Helena Louise Pfeffer" />
         </div>
       </section>
 
       <!-------------------- Skills -------------------->
-      <section class="md:pt-16 md:pb-16 pt-10 pb-10" id="kompetencer">
+      <section class="md:pb-20 md:pt-20 pt-10 pb-10" id="kompetencer">
         <div class="pb-5 md:grid gap-10 grid-cols-2">
-          <div>
+          <div class="elementmedanimation2">
             <h1 class="pb-4">Værktøjer og Kompetencer</h1>
             <p class="pb-10">Jeg bruger Figma til at opsætte designsystemer, skabe komponenter, lave wireframes og udvikle prototyper. Jeg følger "mobile first"-tankegangen.</p>
           </div>
         </div>
         <div class="grid gap-10 grid-cols-2 md:grid-cols-6">
           <div>
-            <img class="pb-3" src="/git.webp" alt="Github logo" />
-            <p class="text-center">Git og GitHub</p>
-          </div>
-          <div>
-            <img class="pb-3" src="/vs_code.webp" alt="visual studio code logo" />
-            <p class="text-center">HTML, CSS, JS, Astro og Tailwind</p>
-          </div>
-          <div>
-            <img class="pb-3" src="/figma.webp" alt="Figma logo" />
+            <img class="pb-3 hover:scale-110 duration-700" src="/figma.webp" alt="Figma logo" />
             <p class="text-center">Figma</p>
           </div>
           <div>
-            <img class="pb-3" src="/ps.webp" alt="Photoshop logo" />
+            <img class="pb-3 hover:scale-110 duration-700" src="/git.webp" alt="Github logo" />
+            <p class="text-center">Git og GitHub</p>
+          </div>
+          <div>
+            <img class="pb-3 hover:scale-110 duration-700" src="/vs_code.webp" alt="visual studio code logo" />
+            <p class="text-center">HTML, CSS, JS, Astro og Tailwind</p>
+          </div>
+          <div>
+            <img class="pb-3 hover:scale-110 duration-700" src="/ps.webp" alt="Photoshop logo" />
             <p class="text-center">photoshop</p>
           </div>
           <div>
-            <img class="pb-3" src="/pr.webp" alt="Premiere pro logo" />
+            <img class="pb-3 hover:scale-110 duration-700" src="/pr.webp" alt="Premiere pro logo" />
             <p class="text-center">Premiere pro</p>
           </div>
           <div>
-            <img class="pb-5" src="/ai.webp" alt="Illustrator logo" />
+            <img class="pb-5 hover:scale-110 duration-700" src="/ai.webp" alt="Illustrator logo" />
             <p class="text-center">Illustrator</p>
           </div>
         </div>
       </section>
 
       <!-------------------- Projekter -------------------->
-      <section class="md:pt-16 md:pb-16 pt-10 pb-10" id="projekter">
-        <div class="pb-5 md:grid gap-10 grid-cols-2">
+      <section class="md:pb-20 md:pt-20 pt-10 pb-10" id="projekter">
+        <div class="pb-5 md:grid gap-10 grid-cols-2 elementmedanimation3">
           <h1 class="pb-4">Projekter</h1>
         </div>
         <div class="grid gap-10 md:grid-cols-2">
-          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-700">
             <a href="https://julespil.netlify.app/" target="_blank">
               <img class="rounded-xl w-full h-64 object-cover" src="/jul.svg" alt="billede fra juletræet spil" />
               <div class="p-6">
@@ -116,7 +116,7 @@ import Link from "../components/Link.astro";
               </div>
             </a>
           </div>
-          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-700">
             <a href="https://itmv007.netlify.app/" target="_blank">
               <img class="rounded-xl w-full h-64 object-cover" src="/verden.webp" alt="billede fra i tråd med verden webfeature" />
               <div class="p-6">
@@ -130,7 +130,7 @@ import Link from "../components/Link.astro";
               </div>
             </a>
           </div>
-          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-700">
             <a href="https://k2gruppe12.netlify.app/" target="_blank">
               <img class="rounded-xl w-full h-64 object-cover" src="/k2.webp" alt="billede fra forsiden for k2's redesignet hjemmeside" />
               <div class="p-6">
@@ -144,7 +144,7 @@ import Link from "../components/Link.astro";
               </div>
             </a>
           </div>
-          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="bg-white border border-gray-200 rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-700">
             <a href="https://cph-billeder.netlify.app/" target="_blank">
               <img class="rounded-xl w-full h-64 object-cover" src="/kbh.webp" alt="billede af københavnerbilleder hjemmeside" />
               <div class="p-6">
@@ -162,41 +162,71 @@ import Link from "../components/Link.astro";
       </section>
 
       <!-------------------- Baggrund -------------------->
-      <section class="md:pt-16 md:pb-16 pt-10 pb-10" id="baggrund">
-        <h1 class="pb-5">Baggrund</h1>
-        <ol class="relative border-s border-gray-300 dark:border-gray-800">
-          <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018</time>
-            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">People's (tiligere: People's Press) - Grafisk designer praktik</h3>
-            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Jeg har haft en uges praktik som grafisk designer hos People’s Press, hvor jeg fik kendskab til flere Adobe-programmer.</p>
-          </li>
-          <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018-2019</time>
-            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Kvik - Køkkenkonsulent</h3>
-            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Som deltids køkkenkonsulent vejledte jeg kunder i købsbeslutninger og fik erfaring med at tegne køkkener.</p>
-          </li>
-          <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018-2021</time>
-            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">HHX - Køge Handelskole</h3>
-            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">På handelskolen gik jeg på studieretningen Business Economics og deltog i frivilligt arbejde, bl.a. med skolebladet, hvor jeg stod for layout og design.</p>
-          </li>
-          <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2021- og fortsat</time>
-            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">IKEA - ansat i returafdeling som dagligansvarlig</h3>
-            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Jeg arbejder i IKEA’s returafdeling, hvor jeg efter et år blev oplært til Backliner. Som Backliner støtter jeg kollegaer med faglige spørgsmål, udfører kontorarbejde og holder overblik over afdelingen.</p>
-          </li>
-          <li class="ms-4">
-            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2023- og fortsat</time>
-            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">KEA - Multimediedesign</h3>
-            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Jeg studerer til multimediedesigner på Københavns Erhvervsakademi, hvor jeg er på 3. semester med valgfaget Digital Design.</p>
-          </li>
-        </ol>
+      <section class="md:pb-20 md:pt-20 pt-10 pb-10" id="baggrund">
+        <div class="elementmedanimation4">
+          <h1 class="pb-5">Baggrund</h1>
+          <ol class="relative border-s border-gray-300 dark:border-gray-800">
+            <li class="mb-10 ms-4">
+              <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018</time>
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white hover:scale-105 duration-700">People's (tiligere: People's Press) - Grafisk designer praktik</h3>
+              <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Jeg har haft en uges praktik som grafisk designer hos People’s Press, hvor jeg fik kendskab til flere Adobe-programmer.</p>
+            </li>
+            <li class="mb-10 ms-4">
+              <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018-2019</time>
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white hover:scale-105 duration-700">Kvik - Køkkenkonsulent</h3>
+              <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Som deltids køkkenkonsulent vejledte jeg kunder i købsbeslutninger og fik erfaring med at tegne køkkener.</p>
+            </li>
+            <li class="mb-10 ms-4">
+              <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018-2021</time>
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white hover:scale-105 duration-700">HHX - Køge Handelskole</h3>
+              <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">På handelskolen gik jeg på studieretningen Business Economics og deltog i frivilligt arbejde, bl.a. med skolebladet, hvor jeg stod for layout og design.</p>
+            </li>
+            <li class="mb-10 ms-4">
+              <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2021- og fortsat</time>
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white hover:scale-105 duration-700">IKEA - ansat i returafdeling som dagligansvarlig</h3>
+              <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Jeg arbejder i IKEA’s returafdeling, hvor jeg efter et år blev oplært til Backliner. Som Backliner støtter jeg kollegaer med faglige spørgsmål, udfører kontorarbejde og holder overblik over afdelingen.</p>
+            </li>
+            <li class="ms-4">
+              <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2023- og fortsat</time>
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white hover:scale-105 duration-700">KEA - Multimediedesign</h3>
+              <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 max-w-lg">Jeg studerer til multimediedesigner på Københavns Erhvervsakademi, hvor jeg er på 3. semester med valgfaget Digital Design.</p>
+            </li>
+          </ol>
+        </div>
       </section>
     </div>
   </div>
 </MainLayout>
+
+<script>
+  import { inView } from "motion";
+
+  const elementmedanimation1 = document.querySelector(".elementmedanimation1");
+
+  inView(elementmedanimation1, () => {
+    elementmedanimation1.classList.add("animate__animated", "animate__bounceIn");
+  });
+
+  const elementmedanimation2 = document.querySelector(".elementmedanimation2");
+
+  inView(elementmedanimation2, () => {
+    elementmedanimation2.classList.add("animate__animated", "animate__bounceIn");
+  });
+
+  const elementmedanimation3 = document.querySelector(".elementmedanimation3");
+
+  inView(elementmedanimation3, () => {
+    elementmedanimation3.classList.add("animate__animated", "animate__bounceIn");
+  });
+
+  const elementmedanimation4 = document.querySelector(".elementmedanimation4");
+
+  inView(elementmedanimation4, () => {
+    elementmedanimation4.classList.add("animate__animated", "animate__bounceIn");
+  });
+</script>
