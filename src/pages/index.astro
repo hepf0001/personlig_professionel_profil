@@ -13,7 +13,7 @@ import Link from "../components/Link.astro";
         <div class="md:flex flex-col items-center justify-center h-full">
           <h1 class="text-white pb-5">Helena Louise Pfeffer</h1>
           <h2 class="text-white pb-5">Kreativ UI/UX Designer og Webudvikler</h2>
-          <p class="text-white pb-5">Jeg har udviklet og designet over 10 hjemmesider ved hjælp af Figma, HTML, CSS, JavaScript, Astro og Tailwind.</p>
+          <p class="text-white pb-5 font-semibold">Jeg har udviklet og designet over 10 hjemmesider ved hjælp af Figma, HTML, CSS, JavaScript, Astro og Tailwind.</p>
           <div class="pb-5 flex justify-center gap-2">
             <a href="#kontakt"><Button variant="primary" size="small">Kontakt</Button></a>
             <a href="#projekter"><Button variant="primary" size="small">Projekter</Button></a>
@@ -22,7 +22,7 @@ import Link from "../components/Link.astro";
       </div>
       <!--Hjøre Col-->
       <div class="w-full md:col-span-3 md:col-start-3 flex items-center justify-center">
-        <img class="w-full md:w-4/5" src="/workspace.svg" />
+        <img class="w-full md:w-4/5" src="/workspace.svg" alt="Illustration af Helenas arbejdsplads" />
       </div>
     </div>
   </div>
@@ -164,30 +164,36 @@ import Link from "../components/Link.astro";
       <!-------------------- Baggrund -------------------->
       <section class="md:pt-16 md:pb-16 pt-10 pb-10" id="baggrund">
         <h1 class="pb-5">Baggrund</h1>
-        <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        <ol class="relative border-s border-gray-300 dark:border-gray-800">
           <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2018</time>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">People's (tiligere: People's Press) - Grafisk designer praktik</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sit atque laborum, architecto quae nam.</p>
+            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018</time>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">People's (tiligere: People's Press) - Grafisk designer praktik</h3>
+            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sit atque laborum, architecto quae nam.</p>
           </li>
           <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2018-2021</time>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">HHX - Køge Handelskole</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018-2019</time>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Kvik - Køkkenkonsulent</h3>
+            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ratione, vel esse expedita corrupti.</p>
           </li>
           <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2018-2019</time>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Kvik - Køkkenkonsulent</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ratione, vel esse expedita corrupti.</p>
+            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2018-2021</time>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">HHX - Køge Handelskole</h3>
+            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li class="mb-10 ms-4">
+            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2021- og fortsat</time>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">IKEA - ansat i returafdeling som dagligansvarlig</h3>
+            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ratione, vel esse expedita.</p>
           </li>
           <li class="ms-4">
-            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021- og fortsat</time>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">IKEA - ansat i returafdeling som dagligansvarlig</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor consectetur adipisicing elit.</p>
+            <div class="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">2023- og fortsat</time>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">KEA - Multimediedesign</h3>
+            <p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400">Lorem ipsum dolor consectetur adipisicing elit.</p>
           </li>
         </ol>
       </section>

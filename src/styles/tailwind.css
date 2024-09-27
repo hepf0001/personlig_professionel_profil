@@ -8,6 +8,7 @@
     @apply uppercase;
     @apply font-bold;
     @apply text-gray-800;
+    @apply font-rubik;
   }
 
   h2 {
@@ -15,6 +16,7 @@
     @apply uppercase;
     @apply font-semibold;
     @apply text-gray-800;
+    @apply font-rubik;
   }
 
   h3 {
@@ -22,9 +24,18 @@
     @apply uppercase;
     @apply font-normal;
     @apply text-gray-800;
+    @apply font-rubik;
   }
 
   p {
     @apply text-gray-800;
+    @apply font-medium;
+    @apply font-lato;
+  }
+
+  a,
+  li {
+    @apply font-normal;
+    @apply font-rubik;
   }
 }
